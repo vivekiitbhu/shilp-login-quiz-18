@@ -4,7 +4,7 @@
 
   
   <link href= "font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href= "bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href= "log_reg.css">
 
   <meta charset="utf-8">
@@ -50,7 +50,7 @@
     <meta name="theme-color" content="#0a1623;">
 
   <link href= "font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href= "bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/log_reg.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style type="text/css">
@@ -81,8 +81,14 @@
                     </div>
                   </div>
                 </div>
-
-				<div class="form-group"><p style="font-weight: 550;">Enter the details of Leader</p></div>
+                <div class="form-group"><p style="font-weight: 550;">Enter the name of your team</p></div>
+                  <div class="form-group">
+                  <input type="text" name="fname" id="fname" tabindex="1" class="form-control " placeholder="Name of team" value="" autocomplete="name" required>
+                  <div class="invalid-feedback">
+                    Please enter the name
+                  </div>
+                </div>
+				        <div class="form-group"><p style="font-weight: 550;">Enter the details of Leader</p></div>
                 <div class="form-group">
                   <input type="text" name="fname" id="fname" tabindex="1" class="form-control " placeholder="Full Name of leader" value="" autocomplete="name" required>
                   <div class="invalid-feedback">
@@ -138,24 +144,24 @@
                  </div>
               </div></br>
 
-
-
-				<div class="form-group"><p style="font-weight: 550;">Enter the details of Second Member</p></div>
+              <!---------------------------------------------------------------------second member---------------------------------------------------------------------------------------->
+				      
+              <div class="form-group"><p style="font-weight: 550;">Enter the details of Second Member</p></div>
                 <div class="form-group">
-                  <input type="text" name="fname" id="fname" class="form-control" tabindex="1"  placeholder="Full Name of second member" value="" autocomplete="name" required>
+                 <input type="text" name="fname" id="fname" class="form-control" tabindex="1"  placeholder="Full Name of second member" value="">
                   <div class="invalid-feedback">
                     Please enter your name
                   </div>
                 </div>
                 <div class="form-group">
-                  <input type="email" name="email" id="email" class="form-control" tabindex="1"  placeholder="Email Address of second member" value="" autocomplete="email" required  >
+              <input type="email" name="email" id="email" class="form-control" tabindex="1"  placeholder="Email Address of second member" value="">
                   <div class="invalid-feedback">
                     Please enter a valid email
                   </div>
                 </div>
                 <div class="form-group">
                  <label for="Contact number">Contact Number</label>
-                 <input type="number" name="phone" id="phone" class="form-control"  tabindex="1" placeholder="Contact Number" autocomplete="tel" value="" required min="1000000000" max="9999999999">
+                 <input type="number" name="phone" id="phone" class="form-control"  tabindex="1" placeholder="Contact Number" value="">
 				 <div class="invalid-feedback">
                     Please enter a valid contact number
                  </div>
@@ -163,7 +169,7 @@
               <div class="form-group">
                 <label for="gender">Gender</label>
 
-                <select name = "gender" class="form-control" id="sel1" required>
+                <select name = "gender" class="form-control" id="sel1">
                   <option disabled value="" class="form-control" selected="selected">--Choose--</option>
                   <option>Male</option>
                   <option>Female</option>
@@ -175,13 +181,13 @@
               </div>
 
               <div class="form-group">
-                <input type="text" name="college" id="college" tabindex="1" class="form-control" placeholder="Name of School/College" value="" required="">
+                <input type="text" name="college" id="college" tabindex="1" class="form-control" placeholder="Name of School/College" value="">
 
               </div>
 
               <div class="form-group">
                 <label for="year">Year</label>
-                <select name = 'year' class="form-control" id="sel1" required  >
+                <select name = 'year' class="form-control" id="sel1">
 
                   <option disabled value="" selected="selected">--Choose--</option>
                   <option>1</option>
@@ -202,7 +208,7 @@
       				            Password:
       				        </td>
       				        <td>
-      				            <input type="password" id="txtPassword" />
+      				            <input type="password" id="txtPassword" name="password" required/>
       				        </td>
       				    </tr>
       				    <tr>
@@ -210,13 +216,12 @@
       				            Confirm Password:
       				        </td>
       				        <td>
-      				            <input type="password" id="txtConfirmPassword" />
+      				            <input type="password" id="txtConfirmPassword" name="cpassword" required/>
       				        </td>
       				    </tr>
       				  </table>
       				</div>
               <!--register-->
-              <div class="form-group"><a href="registration1.html">Click here for registration of only one member</a></div>
               <div class="form-group">
                 <div class="row">
                   <div class="col-sm-6 col-sm-offset-3 completecentre">
@@ -237,9 +242,11 @@
 <footer>
 
 </footer>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script src="jquery/jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script src="log_reg.js"></script>
 
 <script type="text/javascript">
